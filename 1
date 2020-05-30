@@ -1,0 +1,12 @@
+int main()
+{
+    int n,i=2;
+    scanf("%d",&n);
+    while(n!=1){
+        if (n%i==0){ // Neu n chia het cho i thi i la so nguyen to
+            n/=i;// Cap nhat n
+            printf("%d ",i);
+        }else i++;
+    }
+    return 0;
+}
