@@ -1,0 +1,24 @@
+#include<stdio.h>
+
+int main()
+{
+	int Sum = 0,mang[3],i,number,number2;
+	scanf("%d",&number);
+	number2 = number;
+	for(i=0;i<3;i++)
+	{
+		mang[i] = number2%10;
+		number2 = number2 / 10;
+		Sum+= mang[i] * mang[i] * mang[i];
+	}
+	if (Sum == number)
+	{
+		printf("1");
+	}
+	else
+	{
+		printf("0");
+	}
+	
+	return 0;
+}
